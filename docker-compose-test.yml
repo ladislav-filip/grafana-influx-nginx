@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  app:
+    image: pilifs/grafana-influx:1
+    build: .
+  sut:
+    image: alpine:3.13
+    depends_on:
+      - app
+    command: /tmp/run_tests.sh
+    volumes:
+      - "./run_tests.sh:/tmp/run_tests.sh:ro"
