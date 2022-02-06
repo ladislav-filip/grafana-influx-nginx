@@ -1,11 +1,9 @@
 version: "3"
 services:
   grafana_influx:
-    # image: pilifs/grafana-influx:7
-    container_name: "grafana_influx"
+    container_name: "grafana-influx-nginx_grafana_influx"
     ports:
       - "8080:80"
-      - "3001:3000"
     build:
       dockerfile: Dockerfile
       context: ./

@@ -1,5 +1,3 @@
-#!/usr/bin/bash
+echo "Start by run.sh..."
 
-/usr/sbin/nginx
-
-tail -f /dev/null
+sleep 3h
