@@ -6,3 +6,6 @@ Výpis obrazů:
 
 Exec:
 ```docker exec -it --user root grafana_influx sh```
+
+Reaload nginx:
+```nginx -s reload -c /etc/nginx/nginx.conf```
